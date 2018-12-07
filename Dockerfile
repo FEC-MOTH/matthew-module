@@ -8,13 +8,13 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 80
+EXPOSE 3001
 
 ARG HOSTNAME
-ENV HOSTNAME ec2-3-16-136-135.us-east-2.compute.amazonaws.com
+ENV HOSTNAME 54.146.229.91
 
 ARG PORT
-ENV PORT 80
+ENV PORT 3001
 
 RUN npm run build
 
